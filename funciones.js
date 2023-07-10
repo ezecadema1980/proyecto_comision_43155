@@ -1,5 +1,11 @@
-function crearPersona(nombre, edad, domicilio) {
-    this.domicilio=domicilio;
-    this.edad=edad;
-    this.nombre=nombre;
+function calcularPromedio(total, cant) {
+    
+    let promedio="";
+
+    promedio=total/cant;
+
+
+    return promedio;
+
+
 }
