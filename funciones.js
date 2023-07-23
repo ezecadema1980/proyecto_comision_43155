@@ -1,11 +1,7 @@
 function calcularPromedio(total, cant) {
     
-    let promedio="";
-
+    let promedio=0;
     promedio=total/cant;
-
-
-    return promedio;
-
-
+    return promedio.toFixed(2);
 }
+

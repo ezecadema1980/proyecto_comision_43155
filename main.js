@@ -1,28 +1,59 @@
 //Este script contiene una estructura para un simulador
-//Solicita el ingreso de pacientes y calcula la edad promedio
+//Solicita el ingreso de pacientes y calcula la costo promedio de las terapias que toma
 
-class Paciente{
-    constructor(mail, nombre, apellido, telefono, edad){
-        this.nombre=nombre;
-        this.mail=mail;
-        this.apellido=apellido;
-        this.telefono=telefono;
-        this.edad=parseInt(edad);
+let cantidad = prompt("Ingrese la cantidad de Pacientes a Ingresar: ");
+let total= 0;
+let nombre="";
+let apellido="";
+let mail="";
+let telefono="";
+let edad = "";
+const pacientes=[];
+
+if(cantidad>0){
+
+    for (let index = 0; index <cantidad; index++) {
+
+       
+        // Pide la informacion de cada paciente
+        
+        nombre=prompt("Ingrese el Nombre del Paciente: ");
+        apellido=prompt("Ingrese el Apellido del Paciente: ");
+        mail=prompt("Ingrese el Mail del Paciente: ");
+        terapia=prompt("Ingrese la Terapia del Paciente: ");
+        telefono=prompt("Ingrese el telefono del Paciente: ");
+        edad=prompt("Ingrese la Edad del Paciente: ");
+    
+           
+        //Agrego el nuevo paciente a una lista de Pacientes
+        pacientes.push(new Paciente(nombre,apellido,mail,terapia,telefono,edad));
+        
+        
+        //Sumo el total de edades de los pacientes para luego calcular el promedio
+        total=total+parseInt(edad);
+        
+        
     }
+    
+    //Busco el paciente atendido mas grande
+    let mayor;
+    let mayorEdad;
+
+    mayorEdad=pacientes[0].edad;
+    
+    for(i=0;i<pacientes.length;i++){
+        if(pacientes[i].edad > mayorEdad)
+            mayor=pacientes[i].nombre;
+               
+    }
+    
+    alert("El Promedio de edad de los Pacientes Atendidos es de: "+calcularPromedio(total,cantidad));
+
+    alert("El Pacientes mas grande es: "+ mayor);
+
+} else{
+    alert("Debe ingrear un valor mayor que 0");
 }
 
-cantidad = prompt("Ingrese la cantidad de Pacientes a Calcular: ");
-total=0;
-
-for (let index = 1; index <=cantidad; index++) {
-    
-    edad=prompt("Ingrese la Edad del Paciente: ");
-    const paciente1= new Paciente("juan.gomez@gmail.com","Juan","Gomez","514646777",parseInt(edad));
-    
-    total=total+paciente1.edad;
-    alert("El Paciente Atendido tiene: "+paciente1.edad);
-    
-}
 
 
-alert("El Promedio de edad de los Pacientes Atendidos es de: "+calcularPromedio(total,parseInt(cantidad)));
