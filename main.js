@@ -31,25 +31,13 @@ if(cantidad>0){
         
         //Sumo el total de edades de los pacientes para luego calcular el promedio
         total=total+parseInt(edad);
-        
-        
     }
     
-    //Busco el paciente atendido mas grande
-    let mayor;
-    let mayorEdad;
-
-    mayorEdad=pacientes[0].edad;
-    
-    for(i=0;i<pacientes.length;i++){
-        if(pacientes[i].edad > mayorEdad)
-            mayor=pacientes[i].nombre;
-               
-    }
-    
+        
     alert("El Promedio de edad de los Pacientes Atendidos es de: "+calcularPromedio(total,cantidad));
 
-    alert("El Pacientes mas grande es: "+ mayor);
+    //Busca los pacientes mayores a 5 años
+    console.log(obtenerMayores(pacientes,5));
 
 } else{
     alert("Debe ingrear un valor mayor que 0");

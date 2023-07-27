@@ -5,3 +5,8 @@ function calcularPromedio(total, cant) {
     return promedio.toFixed(2);
 }
 
+function obtenerMayores(pacientes,maximo){
+    const mayores = pacientes.filter((el) => el.edad > maximo);
+    return mayores;
+}
+
