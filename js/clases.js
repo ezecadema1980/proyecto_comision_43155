@@ -1,12 +1,10 @@
 class Paciente{
-    constructor(nombre, apellido, mail, terapia, telefono, edad){
+    constructor(nombre, apellido, edad, mail, terapia){
         this.nombre=nombre;
         this.apellido=apellido;
+        this.edad=parseInt(edad);
         this.mail=mail;
         this.terapia=terapia;
-        this.telefono=telefono;
-        this.edad=parseInt(edad);
-    }
-
         
+    }
 }

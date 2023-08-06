@@ -3,15 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+
     <title>Proyecto Final Java Script</title>
 </head>
 <body>
-    <h1>Proyecto Java Script</h1>
-    <h2>Segunda Entrega</h2>
+    <h1>Proyecto Final Java Script</h1>
+    <h2>Simulador</h2>
 
-    <script src="clases.js"></script>
-    <script src="funciones.js"></script>
-    <script src="main.js"></script>
+   
+    <form>
+        <fieldset>
+          <legend>Información Personal</legend>
+          <label for="nombre">Nombre:</label>
+          <input name="nombre" id="nombre" type="text" tabindex="1" />
+          <br>
+          <label for="apellidos">Apellidos:</label>
+          <input name="apellidos" id="apellidos" type="text" tabindex="2" />
+          <br>
+          <label for="edad">Edad:</label>
+          <input name="edad" id="edad" type="text" tabindex="3" />
+          <br>
+          <label for="mail">Mail:</label>
+          <input name="mail" id="mail" type="text" tabindex="4" />
+          <br>
+          <label for="terapia">Terapia:</label>
+          <input name="terapia" id="terapia" type="text" tabindex="5" />
+          <br>
+        </fieldset>
+      
+        <!-- <fieldset>
+          <legend>Terapia</legend>
+          <label><input type="checkbox" id="terapia" tabindex="20" name="terapia" value="Psicologica" /> Psicologica</label>
+          <label><input type="checkbox" id="terapia" tabindex="21" name="terapia" value="Autismo" /> Autismo</label>
+          <label><input type="checkbox" id="terapia" tabindex="22" name="terapia" value="TDH" /> TDH</label>
+        </fieldset> -->
+      
+    </form>
+      
+         
+    <button id="btn" type="submit">Agregar Paciente</button>
+        
+   
+
+    
+
+
+      <ul id="list"></ul>
+
+      <p id="promedio"></p>
+
+    <script src="js/clases.js"></script>
+    <script src="js/funciones.js"></script>
+    <script src="js/main.js"></script>
     
 </body>
 </html>
