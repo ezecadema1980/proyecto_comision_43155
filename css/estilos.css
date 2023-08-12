@@ -13,12 +13,10 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-}
-
-.container {
-  display: flex;
-  flex-direction: row;
-  align-content: center;
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(245, 231, 220);
+  background-image: radial-gradient(rgb(218, 195, 195), rgb(245, 231, 220));
+ 
 }
 
 input {
@@ -27,6 +25,7 @@ input {
   border-radius: 5px;
   border: 1px solid #ccc;
   padding: 0 10px;
+  font-family: "Roboto", sans-serif;
 }
 
 button {
@@ -36,6 +35,7 @@ button {
   border: 1px solid #ccc;
   background-color: #fff;
   margin-left: 10px;
+  font-family: "Roboto", sans-serif;
 }
 
 ul {
@@ -53,5 +53,23 @@ li {
   height: 30px;
   padding: 0 10px;
   margin: 10px 0;
+  font-family: "Roboto", sans-serif;
 }
+
+#f_pacientes {
+  
+  display: none;
+  
+}
+
+#btn {
+  display: none;
+  
+}
+
+#list {
+  display: none;
+  
+}
+
 

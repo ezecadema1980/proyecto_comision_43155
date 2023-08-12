@@ -9,10 +9,31 @@
 </head>
 <body>
     <h1>Proyecto Final Java Script</h1>
-    <h2>Simulador</h2>
+    <h2>Tercera Entrega - Simulador</h2>
+    <br>
 
+    <section>
+
+    <form id="register">
+      <fieldset>
+        <legend>Iniciar Sesion</legend>
+        <label for="usuario">Usuario:</label>
+        <input type="text" name="usuario" id="usuario" placeholder="Usuario" />
+        <br>
+        <label for="password">Password:</label>
+        <input type="text" name="password" id="password" placeholder="Contraseña" />
+        <br>
+        <input type="submit" value="Iniciar" />
+              
+      </fieldset>
+      
+    </form>
+
+  </section>
+
+  <section>
    
-    <form>
+    <form id="f_pacientes">
         <fieldset>
           <legend>Información Personal</legend>
           <label for="nombre">Nombre:</label>
@@ -32,25 +53,18 @@
           <br>
         </fieldset>
       
-        <!-- <fieldset>
-          <legend>Terapia</legend>
-          <label><input type="checkbox" id="terapia" tabindex="20" name="terapia" value="Psicologica" /> Psicologica</label>
-          <label><input type="checkbox" id="terapia" tabindex="21" name="terapia" value="Autismo" /> Autismo</label>
-          <label><input type="checkbox" id="terapia" tabindex="22" name="terapia" value="TDH" /> TDH</label>
-        </fieldset> -->
-      
     </form>
+
+  </section>
       
+  <br>
          
     <button id="btn" type="submit">Agregar Paciente</button>
-        
-   
-
     
-
+    <br>
 
       <ul id="list"></ul>
-
+      <br>
       <p id="promedio"></p>
 
     <script src="js/clases.js"></script>

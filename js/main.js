@@ -4,6 +4,7 @@
 //Modificar el DOM y mostrar la lista de Pacientes con los botones agregar y eliminar Pacientes
 
 
+
 const pacientes=[];
 let paciente=null;
 
@@ -16,28 +17,14 @@ let mail=document.getElementById("mail");
 let terapia=document.getElementById("terapia");
 
 //Declaro Variable que recibe Boton de Submit
-let btn = document.getElementById("btn");
+let obj_btn = document.getElementById("btn");
 
-//Declaro Variable que recibe componente de Lista
-let lista = document.getElementById("list");
+//Declaro Variable que recibe componente de Lista de Pacientes
+let obj_lista = document.getElementById("list");
 
-
-
+//Declaro Variable que recibe componente DOM Parrafo
+let obj_promedio=document.getElementById("promedio");
     
-           
-        
-        
-        
-    //Sumo el total de edades de los pacientes para luego calcular el promedio
-    //total=total+parseInt(edad);
-    
-    
-        
-    //alert("El Promedio de edad de los Pacientes Atendidos es de: "+calcularPromedio(total,cantidad));
-
-    //Busca los pacientes mayores a 5 años
-    //console.log(obtenerMayores(pacientes,5));
-
 
 
 document.addEventListener("DOMContentLoaded", mostrarPacientes);
