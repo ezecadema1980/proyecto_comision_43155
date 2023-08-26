@@ -67,9 +67,12 @@ li {
   
 }
 
-#list {
+#btn_hist {
   display: none;
   
 }
 
-
+#list {
+  display: none;
+  
+}

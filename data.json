@@ -1,0 +1,11 @@
+[
+    { "nombre": "Jose", "apellido": "Ramirez", "edad":10, "terapia": "Psicologia", "id": 1 },
+    { "nombre": "Leandro", "apellido": "Romagnoli", "edad":12, "terapia": "Denver", "id": 2 },
+    { "nombre": "Pamela", "apellido": "Arias", "edad":8, "terapia": "Asperger", "id": 3 },
+    { "nombre": "Maria", "apellido": "Lopez", "edad":6, "terapia": "Denver", "id": 4 },
+    { "nombre": "Sandro", "apellido": "Rodriguez", "edad": 9, "terapia": "Psicologia", "id": 5 }
+  ]
+
+
+
+        

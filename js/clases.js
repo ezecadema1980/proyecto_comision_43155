@@ -1,17 +1,16 @@
 class Paciente{
-    constructor(nombre, apellido, edad, mail, terapia){
-        this.nombre=nombre;
-        this.apellido=apellido;
-        this.edad=parseInt(edad);
-        this.mail=mail;
-        this.terapia=terapia;
-        
-    }
+  constructor(nombre, apellido, edad, terapia){
+      this.nombre=nombre;
+      this.apellido=apellido;
+      this.edad=parseInt(edad);
+      this.terapia=terapia;
+      
+  }
 }
 
 
 class Usuario {
-    constructor(usuario, password) {
-      (this.usuario = usuario), (this.password = password);
-    }
+  constructor(usuario, password) {
+    (this.usuario = usuario), (this.password = password);
   }
+}

@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Proyecto Final Java Script</title>
 </head>
 <body>
+    
+  
+  
     <h1>Proyecto Final Java Script</h1>
-    <h2>Tercera Entrega - Simulador</h2>
+    <h2>Entrega Final - Simulador</h2>
     <br>
 
     <section>
@@ -45,9 +48,6 @@
           <label for="edad">Edad:</label>
           <input name="edad" id="edad" type="text" tabindex="3" />
           <br>
-          <label for="mail">Mail:</label>
-          <input name="mail" id="mail" type="text" tabindex="4" />
-          <br>
           <label for="terapia">Terapia:</label>
           <input name="terapia" id="terapia" type="text" tabindex="5" />
           <br>
@@ -57,13 +57,17 @@
 
   </section>
       
-  <br>
+    <br>
          
     <button id="btn" type="submit">Agregar Paciente</button>
+    <br>
+    <button id="btn_hist" type="submit">Mostrar Historial Pacientes</button>
     
     <br>
 
       <ul id="list"></ul>
+      <br>
+      <ul id="list_hist"></ul>
       <br>
       <p id="promedio"></p>
 
