@@ -12,10 +12,10 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 70vh;
   font-family: "Roboto", sans-serif;
-  background-color: rgb(245, 231, 220);
-  background-image: radial-gradient(rgb(218, 195, 195), rgb(245, 231, 220));
+  background-color: rgb(220, 225, 245);
+  background-image: radial-gradient(rgb(218, 213, 195), rgb(245, 245, 220));
  
 }
 
@@ -28,15 +28,25 @@ input {
   font-family: "Roboto", sans-serif;
 }
 
-button {
-  width: 100px;
+label {
+  width: 300px;
   height: 30px;
   border-radius: 5px;
   border: 1px solid #ccc;
-  background-color: #fff;
-  margin-left: 10px;
+  padding: 0 10px;
   font-family: "Roboto", sans-serif;
 }
+
+button {
+  width: 120px;
+  height: 40px;
+  border-radius: 6px;
+  margin-left: 10px;
+  font-family: "Roboto", sans-serif;
+  border: 1px solid #5fe23e;
+  background-color: #3ab059;
+}
+
 
 ul {
   list-style: none;
@@ -58,6 +68,11 @@ li {
 
 #f_pacientes {
   
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   display: none;
   
 }
@@ -65,14 +80,20 @@ li {
 #btn {
   display: none;
   
+
+  
 }
 
 #btn_hist {
   display: none;
   
+  
 }
 
 #list {
   display: none;
+  border: 1px solid #5fe23e;
+  background-color: #d9cdad;
+  
   
 }

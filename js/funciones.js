@@ -101,10 +101,6 @@ function eliminarPaciente(index) {
     mostrarPacientes();
 }
 
-
-
-  
-
   
 function mostrarPacientes() {
     
